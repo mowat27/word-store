@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Drag and Drop Example</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/master.css">
+    <script src="/js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Draggable Word List</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h3>English</h3>
+        </div>
+        <div class="col">
+          <h3>Polish</h3>
+        </div>
+        <div class="col">
+          <h3>Grammar</h3>
+        </div>
+      </div>
+
+      <% words.each do |word| %>
+        <div class="row">
+          <div class="col">
+            <p class="word english" draggable="true" ondragstart="dragstart_handler(event);"><%= word.english %></p>
+          </div>
+          <div class="col">
+            <p class="word polish" draggable="true" ondragstart="dragstart_handler(event);"><%= word.polish %></p>
+          </div>
+          <div class="col">
+            <p class="word grammar" draggable="true" ondragstart="dragstart_handler(event);"><%= word.grammar %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>
