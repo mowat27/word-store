@@ -4,16 +4,17 @@ require 'csv'
 require 'erb'
 require 'ostruct'
 
-words = [
-  {english: "silver", polish: "srebro", grammar: "nn"},
-  {english: "nice (person)", polish: "miły", grammar: "adj"},
-  {english: "walk", polish: "chodzić", grammar: "v"},
-  {english: "go (on foot)", polish: "iść", grammar: "v"},
-].map { |h| OpenStruct.new(h) }
+# -- Functions and Classes -----------------------------------------------------
 
 class Array
   def second
     self[1]
+  end
+end
+
+class Object
+  def present?
+    !nil?
   end
 end
 
@@ -36,37 +37,65 @@ headers = [
   [:notes]
 ]
 
-words = STDIN.readlines.drop(1).reduce([]) do |arr, line|
-  csv = headers.map(&:second).zip(CSV.parse(line).first).map { |xform, val| xform ? nullify(xform).call(val) : val }
-  row = headers.map(&:first).zip(csv)
-  arr << OpenStruct.new(Hash[row])
-end
+class Word < Struct.new *headers.map(&:first)
+  def fully_translated?
+    polish.present? && grammar.present?
+  end
 
-def ready?(word)
-  word.added_to_anki_at.nil? && word.polish && word.grammar
-end
+  def added?
+    added_to_anki_at.present?
+  end
 
-def number?(word)
-  word.grammer == "num"
-end
+  def noun?
+    grammar =~ /^n(m|f|n)$/
+  end
 
-def time?(word)
-  word.grammer == "day" || word.grammer == "month"
+  def adjective?
+    grammar == "adj"
+  end
+
+  def verb?
+    grammar == "v"
+  end
+
+  def number?
+    grammar == "num"
+  end
+
+  def time?
+    grammar == "day" || grammar == "month"
+  end
 end
 
 def forvo_command(words)
   words.reduce("forvo") { |s, word| s + %Q{ "#{word.polish}"} }
 end
 
-# words.each do |word|
-#   next unless word.clarification
-#   notes = word.clarification.split(/[)(]+/).reject(&:empty?).join(", ")
-#   word.english += " (#{notes})"
-# end
+def ready?(word)
+  word.fully_translated? && !word.added?
+end
+
+def in_scope?(word)
+  word.noun? || word.verb? || word.adjective?
+end
+
+# -- Program -------------------------------------------------------------------
+
+words = STDIN.readlines.drop(1).reduce([]) do |arr, line|
+  csv = headers.map(&:second).zip(CSV.parse(line).first).map { |xform, val| xform ? nullify(xform).call(val) : val }
+  row = headers.map(&:first).zip(csv)
+  arr << Word.new(*csv)
+end
 
 template_file = "#{File.dirname(__FILE__)}/templates/layout.html.erb"
 template = ERB.new(File.read(template_file))
+selected_words = words.select { |word| in_scope?(word) && ready?(word) }
 
-publish_list = words.reject { |word| !ready?(word) || number?(word) || time?(word) }
-puts template.result_with_hash(words: publish_list, icon_size: 20, forvo_cli: forvo_command(publish_list) )
-STDERR.puts "Generated html for #{publish_list.count} words"
+puts template.result_with_hash(
+  words: selected_words,
+  icon_size: 20,
+  forvo_cli: forvo_command(selected_words),
+  forvo_api_key:
+)
+
+STDERR.puts "Generated html for #{selected_words.count} words"
