@@ -9,6 +9,14 @@ h1 {
   /* left: 5px; */
 }
 
+.icon.copy {
+  cursor: pointer;
+}
+
+.icon.move {
+  cursor: grab;
+}
+
 p.word {
   font-size: 16pt;
 }
