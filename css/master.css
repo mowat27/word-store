@@ -2,10 +2,22 @@ h1 {
   margin-bottom: 30px;
 }
 
+h3 {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
 .icon {
   position: relative;
   /* Adjust these values accordingly */
-  top: -2px;
+  top: -1px;
+  /* left: 5px; */
+}
+
+.icon.big {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: -9px;
   /* left: 5px; */
 }
 
@@ -18,9 +30,18 @@ h1 {
 }
 
 p.word {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 p.word.english {
   font-weight: bold;
+}
+
+textarea.cli {
+  resize: none;
+  width: 90%;
+  white-space: nowrap;
+  border: none;
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
 }
