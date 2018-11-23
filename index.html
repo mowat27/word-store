@@ -14,7 +14,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Draggable Word List</h1>
+          <h1>Word List</h1>
         </div>
       </div>
 
@@ -33,1371 +33,1372 @@
       <hr/>
 
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">cool</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">cool (adjective)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="chłodne" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="chłodne" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="chłodne" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  chłodne
-                </span>
+              <span class="pbcopy-text">
+                chłodne
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="adj" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  adj
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">verb</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="adj" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="czasownik" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  czasownik
-                </span>
+              <span>
+                adj
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  v
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">nineteen</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">verb</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="czasownik" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="czasownik" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="dziewiętnaście" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  dziewiętnaście
-                </span>
+              <span class="pbcopy-text">
+                czasownik
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  num
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">seven</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="siedem" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  siedem
-                </span>
+              <span>
+                v
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  num
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">March</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">nineteen</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="dziewiętnaście" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="dziewiętnaście" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="marzec" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  marzec
-                </span>
+              <span class="pbcopy-text">
+                dziewiętnaście
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="month" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  month
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">hard</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="ciężko" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  ciężko
-                </span>
+              <span>
+                num
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="adj" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  adj
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">Thursday</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">seven</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="siedem" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="siedem" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="czwartek" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  czwartek
-                </span>
+              <span class="pbcopy-text">
+                siedem
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="day" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  day
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">she</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="ona" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  ona
-                </span>
+              <span>
+                num
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="pn" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  pn
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">fifteen</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">March</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="marzec" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="marzec" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="piętnaście" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  piętnaście
-                </span>
+              <span class="pbcopy-text">
+                marzec
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  num
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">wave</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="month" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="fala" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  fala
-                </span>
+              <span>
+                month
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nf
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">paint</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">hard</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="ciężko" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="ciężko" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="farba" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  farba
-                </span>
+              <span class="pbcopy-text">
+                ciężko
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nf
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">light</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="adj" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="światło" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  światło
-                </span>
+              <span>
+                adj
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nn" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nn
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">speak</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">Thursday</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="czwartek" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="czwartek" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="mówić" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  mówić
-                </span>
+              <span class="pbcopy-text">
+                czwartek
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  v
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">Wednesday</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="day" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="środa" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  środa
-                </span>
+              <span>
+                day
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="day" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  day
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">zero</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">she</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="ona" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="ona" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="zero" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  zero
-                </span>
+              <span class="pbcopy-text">
+                ona
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  num
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">lunch</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="pn" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="lunch" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  lunch
-                </span>
+              <span>
+                pn
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nm
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">twenty</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">fifteen</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="piętnaście" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="piętnaście" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="dwadzieścia" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  dwadzieścia
-                </span>
+              <span class="pbcopy-text">
+                piętnaście
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  num
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">finger</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="palec" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  palec
-                </span>
+              <span>
+                num
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nm
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">truck</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">wave (ocean)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="fala" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="fala" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="ciężarówka" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  ciężarówka
-                </span>
+              <span class="pbcopy-text">
+                fala
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nf
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">wear</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="nosić" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nosić
-                </span>
+              <span>
+                nf
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  v
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">box</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">paint</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="farba" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="farba" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="pudło" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  pudło
-                </span>
+              <span class="pbcopy-text">
+                farba
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nn" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nn
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">house</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="dom" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  dom
-                </span>
+              <span>
+                nf
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nm
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">prison</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">light (noun)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="światło" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="światło" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="więzienie" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  więzienie
-                </span>
+              <span class="pbcopy-text">
+                światło
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nn" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nn
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">hear</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nn" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="słuchać" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  słuchać
-                </span>
+              <span>
+                nn
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  v
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">glass</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">speak (verb)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="mówić" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="mówić" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="szklanka" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  szklanka
-                </span>
+              <span class="pbcopy-text">
+                mówić
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nf
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">sing</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="śpiewać" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  śpiewać
-                </span>
+              <span>
+                v
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  v
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">coffee</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">Wednesday</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="środa" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="środa" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="kawa" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  kawa
-                </span>
+              <span class="pbcopy-text">
+                środa
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nf
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">two</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="day" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="dwa" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  dwa
-                </span>
+              <span>
+                day
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  num
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">pink</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">zero</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="zero" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="zero" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="róż" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  róż
-                </span>
+              <span class="pbcopy-text">
+                zero
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nm
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">ticket</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="bilet" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  bilet
-                </span>
+              <span>
+                num
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nm
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">low</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">lunch</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="lunch" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="lunch" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="niska" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  niska
-                </span>
+              <span class="pbcopy-text">
+                lunch
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="adv" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  adv
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">kiss</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="pocałunek" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  pocałunek
-                </span>
+              <span>
+                nm
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  v
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">fish</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">twenty (– one , etc.)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="dwadzieścia" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="dwadzieścia" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="ryba" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  ryba
-                </span>
+              <span class="pbcopy-text">
+                dwadzieścia
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nf
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
-      
-        <div class="row">
-          <div class="col">
-            <p class="word english">large</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="duży" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  duży
-                </span>
+              <span>
+                num
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="adj" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  adj
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+      </div>
       
-        <div class="row">
-          <div class="col">
-            <p class="word english">grass</p>
-          </div>
-          <div class="col">
-            <p class="word polish">
+      <div class="row">
+        <div class="col">
+          <p class="word english">finger</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="palec" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="palec" ondragstart="dragstart_handler(event);">
               <span class="icon">
-                <svg id="i-clipboard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
                 </svg>
               </span>
-              <span class="draggable text" draggable="true" data-text="trawa" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  trawa
-                </span>
+              <span class="pbcopy-text">
+                palec
               </span>
-            </p>
-          </div>
-          <div class="col">
-            <p class="word grammar">
-              <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
-                <span class="icon">
-                  <svg id="i-move" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
-                  </svg>
-                </span>
-                <span>
-                  nf
-                </span>
-              </span>
-            </p>
-          </div>
+            </span>
+          </p>
         </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nm
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
       
+      <div class="row">
+        <div class="col">
+          <p class="word english">truck</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="ciężarówka" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="ciężarówka" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                ciężarówka
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nf
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">wear (verb)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="nosić" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="nosić" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                nosić
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                v
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">box (noun)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="pudło" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="pudło" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                pudło
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nn" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nn
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">house</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="dom" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="dom" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                dom
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nm
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">prison</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="więzienie" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="więzienie" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                więzienie
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nn" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nn
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">hear (a sound)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="słuchać" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="słuchać" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                słuchać
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                v
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">glass</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="szklanka" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="szklanka" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                szklanka
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nf
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">sing (verb)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="śpiewać" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="śpiewać" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                śpiewać
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                v
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">coffee</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="kawa" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="kawa" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                kawa
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nf
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">two</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="dwa" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="dwa" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                dwa
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="num" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                num
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">pink</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="róż" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="róż" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                róż
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nm
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">ticket (train)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="bilet" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="bilet" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                bilet
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nm" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nm
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">low</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="niska" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="niska" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                niska
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="adv" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                adv
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">kiss (verb)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="pocałunek" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="pocałunek" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                pocałunek
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="v" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                v
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">fish (noun)</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="ryba" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="ryba" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                ryba
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nf
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">large</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="duży" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="duży" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                duży
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="adj" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                adj
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <p class="word english">grass</p>
+        </div>
+        <div class="col">
+          <p class="word polish">
+            <span class="icon" data-text="trawa" onclick="copyText(event)">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+              </svg>
+            </span>
+            <span class="draggable text" draggable="true" data-text="trawa" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span class="pbcopy-text">
+                trawa
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="col">
+          <p class="word grammar">
+            <span class="draggable text" draggable="true" data-text="nf" ondragstart="dragstart_handler(event);">
+              <span class="icon">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
+                </svg>
+              </span>
+              <span>
+                nf
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+
     </div>
   </body>
 </html>

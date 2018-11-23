@@ -54,9 +54,15 @@ def time?(word)
   word.grammer == "day" || word.grammer == "month"
 end
 
+words.each do |word|
+  next unless word.clarification
+  notes = word.clarification.split(/[)(]+/).reject(&:empty?).join(", ")
+  word.english += " (#{notes})"
+end
+
 template_file = "#{File.dirname(__FILE__)}/templates/layout.html.erb"
 template = ERB.new(File.read(template_file))
 
 publish_list = words.reject { |word| !ready?(word) || number?(word) || time?(word) }
-puts template.result_with_hash(words: publish_list )
+puts template.result_with_hash(words: publish_list, icon_size: 24 )
 STDERR.puts "Generated html for #{publish_list.count} words"

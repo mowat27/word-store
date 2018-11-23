@@ -10,5 +10,9 @@ h1 {
 }
 
 p.word {
-  font-size: 21pt;
+  font-size: 16pt;
+}
+
+p.word.english {
+  font-weight: bold;
 }

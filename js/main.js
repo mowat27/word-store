@@ -3,15 +3,18 @@ function dragstart_handler(ev) {
 }
 
 function copyText(ev) {
-  /* Get the text field */
-  var copyText = document.getElementById("myInput");
-
-  /* Select the text field */
-  copyText.select();
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  var cntr = ev.target.parentElement
+  if(cntr.dataset.text) {
+    textArea = document.createElement("textarea");
+    textArea.value = cntr.dataset.text;
+    cntr.appendChild(textArea);
+    textArea.select();
+    try {
+      document.execCommand("copy");
+      console.log('Copied ' + cntr.dataset.text);
+    } catch (err) {
+      console.log('Oops, unable to copy');
+    }
+    cntr.removeChild(textArea);
+  }
 }
