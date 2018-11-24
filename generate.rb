@@ -81,21 +81,29 @@ end
 
 # -- Program -------------------------------------------------------------------
 
+forvo_api_key = ENV["FORVO_API_KEY"]
+if forvo_api_key.nil?
+  STDERR.puts "Please set the FORVO_API_KEY variable"
+  exit 1
+end
+
 words = STDIN.readlines.drop(1).reduce([]) do |arr, line|
-  csv = headers.map(&:second).zip(CSV.parse(line).first).map { |xform, val| xform ? nullify(xform).call(val) : val }
-  row = headers.map(&:first).zip(csv)
+  csv = headers.
+    map(&:second).
+    zip(CSV.parse(line).first).
+    map { |xform, val| xform ? nullify(xform).call(val) : val }
   arr << Word.new(*csv)
 end
+selected_words = words.select { |word| in_scope?(word) && ready?(word) }
 
 template_file = "#{File.dirname(__FILE__)}/templates/layout.html.erb"
 template = ERB.new(File.read(template_file))
-selected_words = words.select { |word| in_scope?(word) && ready?(word) }
 
 puts template.result_with_hash(
   words: selected_words,
   icon_size: 20,
   forvo_cli: forvo_command(selected_words),
-  forvo_api_key:
+  forvo_api_key: forvo_api_key
 )
 
 STDERR.puts "Generated html for #{selected_words.count} words"
