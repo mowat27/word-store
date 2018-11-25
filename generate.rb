@@ -3,6 +3,7 @@
 require 'csv'
 require 'erb'
 require 'ostruct'
+require 'time'
 
 # -- Functions and Classes -----------------------------------------------------
 
@@ -30,7 +31,6 @@ headers = [
   [:num, int],
   [:english],
   [:clarification],
-  [:google_trans, downcase],
   [:polish, downcase],
   [:grammar, downcase],
   [:added_to_anki_at],

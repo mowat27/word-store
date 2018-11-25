@@ -1,10 +1,18 @@
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 
 h3 {
   font-size: 16pt;
   font-weight: bold;
+}
+
+h5 {
+  font-size: 14pt;
+  font-style: italic;
+  color: gray;
+  margin-bottom: 25px;
 }
 
 .icon {
